@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+           
+        }
+        p {
+            text-align: center;
+            color: gray;
+            margin-bottom: 30px;
+        }
+
+        .board {
+            width: 90%;
+            height: 700px;
+            background-color: #fff9e6;
+            border: 3px solid #d8b46a;
+            padding: 30px;
+            position: relative;
+
+
+        }
+        .note {
+            width: 200px;
+            height: 200px;
+            border: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .static {
+            background-color: #ffd6d6;
+            position: static;
+        }
+        .relative {
+            background-color: #d8ffc4;
+            position: relative;
+            top: 30px;
+            right: 30px;
+        }
+        .absolute {
+            background-color: #cfe2ff;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+        .sticky {
+            background-color: #e9c8ff;
+            width: 90%;
+            height: 70px;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1> CSS positiion - Sticky Notes Board</h1>
+    <p> Each Notes uses a different Position Property</p>
+
+    <div class="board">
+        <!-- static-->
+        <div class="note static">
+            <h3>1. Static</h3>
+            <br>
+            I am in normal flow (default)
+        </div>
+
+        <!-- Relative-->
+         <div class="note relative">
+            <h3>2. Relative</h3>
+            <br>
+            I move with top left.
+         </div>
+
+         <!-- Absolute-->
+          <div class="note absolute">
+            <h3>3. Absolute</h3>
+            <br>
+            I am placed at top-right corner
+          </div>
+
+          <!-- Sticky-->
+           <div class="note sticky">
+            <h3>4. Sticky</h3>
+            <br>
+            Scroll to see me stick at top
+           </div>
+    </div>
+
+    <!-- Extra content-->
+     <div class="content">
+        <br>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora doloremque harum nisi sapiente reprehenderit provident dolores aut ipsam, placeat hic, quidem unde mollitia officia nostrum quia corrupti sequi. Necessitatibus, alias!
+        Fugit nobis iste ad rem ratione incidunt placeat, vitae quas architecto, soluta perferendis error quis fugiat hic? Exercitationem saepe deserunt accusantium similique nam, minus rerum omnis excepturi laborum, autem dolorum.
+        Accusantium, obcaecati incidunt a doloribus veritatis cupiditate recusandae eos nostrum at cumque quod itaque? Ut distinctio perspiciatis minus facilis, explicabo nam quis aut suscipit architecto, nemo unde? Sint, veniam aperiam.</p>
+
+        <br>
+
+
+        <br>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora doloremque harum nisi sapiente reprehenderit provident dolores aut ipsam, placeat hic, quidem unde mollitia officia nostrum quia corrupti sequi. Necessitatibus, alias!
+        Fugit nobis iste ad rem ratione incidunt placeat, vitae quas architecto, soluta perferendis error quis fugiat hic? Exercitationem saepe deserunt accusantium similique nam, minus rerum omnis excepturi laborum, autem dolorum.
+        Accusantium, obcaecati incidunt a doloribus veritatis cupiditate recusandae eos nostrum at cumque quod itaque? Ut distinctio perspiciatis minus facilis, explicabo nam quis aut suscipit architecto, nemo unde? Sint, veniam aperiam.</p>
+
+        <br>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora doloremque harum nisi sapiente reprehenderit provident dolores aut ipsam, placeat hic, quidem unde mollitia officia nostrum quia corrupti sequi. Necessitatibus, alias!
+        Fugit nobis iste ad rem ratione incidunt placeat, vitae quas architecto, soluta perferendis error quis fugiat hic? Exercitationem saepe deserunt accusantium similique nam, minus rerum omnis excepturi laborum, autem dolorum.
+        Accusantium, obcaecati incidunt a doloribus veritatis cupiditate recusandae eos nostrum at cumque quod itaque? Ut distinctio perspiciatis minus facilis, explicabo nam quis aut suscipit architecto, nemo unde? Sint, veniam aperiam.</p>
+
+        
+        <br>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora doloremque harum nisi sapiente reprehenderit provident dolores aut ipsam, placeat hic, quidem unde mollitia officia nostrum quia corrupti sequi. Necessitatibus, alias!
+        Fugit nobis iste ad rem ratione incidunt placeat, vitae quas architecto, soluta perferendis error quis fugiat hic? Exercitationem saepe deserunt accusantium similique nam, minus rerum omnis excepturi laborum, autem dolorum.
+        Accusantium, obcaecati incidunt a doloribus veritatis cupiditate recusandae eos nostrum at cumque quod itaque? Ut distinctio perspiciatis minus facilis, explicabo nam quis aut suscipit architecto, nemo unde? Sint, veniam aperiam.</p>
+  
+        
+        <br>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora doloremque harum nisi sapiente reprehenderit provident dolores aut ipsam, placeat hic, quidem unde mollitia officia nostrum quia corrupti sequi. Necessitatibus, alias!
+        Fugit nobis iste ad rem ratione incidunt placeat, vitae quas architecto, soluta perferendis error quis fugiat hic? Exercitationem saepe deserunt accusantium similique nam, minus rerum omnis excepturi laborum, autem dolorum.
+        Accusantium, obcaecati incidunt a doloribus veritatis cupiditate recusandae eos nostrum at cumque quod itaque? Ut distinctio perspiciatis minus facilis, explicabo nam quis aut suscipit architecto, nemo unde? Sint, veniam aperiam.</p>
+
+
+         <br>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora doloremque harum nisi sapiente reprehenderit provident dolores aut ipsam, placeat hic, quidem unde mollitia officia nostrum quia corrupti sequi. Necessitatibus, alias!
+        Fugit nobis iste ad rem ratione incidunt placeat, vitae quas architecto, soluta perferendis error quis fugiat hic? Exercitationem saepe deserunt accusantium similique nam, minus rerum omnis excepturi laborum, autem dolorum.
+        Accusantium, obcaecati incidunt a doloribus veritatis cupiditate recusandae eos nostrum at cumque quod itaque? Ut distinctio perspiciatis minus facilis, explicabo nam quis aut suscipit architecto, nemo unde? Sint, veniam aperiam.</p>
+
+         <br>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora doloremque harum nisi sapiente reprehenderit provident dolores aut ipsam, placeat hic, quidem unde mollitia officia nostrum quia corrupti sequi. Necessitatibus, alias!
+        Fugit nobis iste ad rem ratione incidunt placeat, vitae quas architecto, soluta perferendis error quis fugiat hic? Exercitationem saepe deserunt accusantium similique nam, minus rerum omnis excepturi laborum, autem dolorum.
+        Accusantium, obcaecati incidunt a doloribus veritatis cupiditate recusandae eos nostrum at cumque quod itaque? Ut distinctio perspiciatis minus facilis, explicabo nam quis aut suscipit architecto, nemo unde? Sint, veniam aperiam.</p>
+
+         <br>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora doloremque harum nisi sapiente reprehenderit provident dolores aut ipsam, placeat hic, quidem unde mollitia officia nostrum quia corrupti sequi. Necessitatibus, alias!
+        Fugit nobis iste ad rem ratione incidunt placeat, vitae quas architecto, soluta perferendis error quis fugiat hic? Exercitationem saepe deserunt accusantium similique nam, minus rerum omnis excepturi laborum, autem dolorum.
+        Accusantium, obcaecati incidunt a doloribus veritatis cupiditate recusandae eos nostrum at cumque quod itaque? Ut distinctio perspiciatis minus facilis, explicabo nam quis aut suscipit architecto, nemo unde? Sint, veniam aperiam.</p>
+
+         <br>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora doloremque harum nisi sapiente reprehenderit provident dolores aut ipsam, placeat hic, quidem unde mollitia officia nostrum quia corrupti sequi. Necessitatibus, alias!
+        Fugit nobis iste ad rem ratione incidunt placeat, vitae quas architecto, soluta perferendis error quis fugiat hic? Exercitationem saepe deserunt accusantium similique nam, minus rerum omnis excepturi laborum, autem dolorum.
+        Accusantium, obcaecati incidunt a doloribus veritatis cupiditate recusandae eos nostrum at cumque quod itaque? Ut distinctio perspiciatis minus facilis, explicabo nam quis aut suscipit architecto, nemo unde? Sint, veniam aperiam.</p>
+
+     </div>
+</body>
+</html>
