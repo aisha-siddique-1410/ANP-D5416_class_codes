@@ -248,9 +248,105 @@ let a = arr1.slice(-2);
 
 
 // reduce
-let numbers = [1, 2, 3, 4, 5];
-let sum = numbers.reduce((prev, curr) => {
-    return prev *  curr;
-});
+// let numbers = [1, 2, 3, 4, 5];
+// let sum = numbers.reduce((prev, curr) => {
+//     return prev +  curr;
+// },0);
 
-console.log(sum);
+// console.log(sum);
+
+
+/* Exercise 1 – Grocery Store Basket
+
+A customer is shopping in a grocery store and keeps adding items to their basket.
+
+Your Task:
+Create an empty array called basket.
+Add 5 grocery items using push().
+Display all items in the basket.
+The customer changes their mind and removes the last item using pop().
+Display the updated basket and the removed item.
+Exercise 2 – Morning School Attendance
+
+A class teacher is preparing the attendance list for the day.
+
+Your Task:
+Create an array with the names of 5 students.
+One student arrives late and should be added at the beginning using unshift().
+Another student leaves early, so remove the first student using shift().
+Display the final attendance list.
+Exercise 3 – Movie Ticket Booking
+
+A cinema website asks users for booking details.
+
+Your Task:
+Ask the user’s name using prompt().
+Ask for their favorite movie name.
+Show a welcome message using alert().
+Display another alert confirming their movie booking. */
+
+// Functions in JS
+
+// function myFunction(){
+//     console.log("We are learning JS");
+// }
+// myFunction();
+// myFunction();
+// myFunction();  // function saves redundancy
+
+// function myFunction(msg){
+//     console.log(msg);
+// }
+// myFunction("We are learning JS");
+
+// function sum(x, y){
+// var s = x+y;
+//  console.log("before return");
+//     return s;
+//     console.log("After return");
+// }
+// // let val = sum(2, 3);
+// // console.log(val);
+// sum(2,3);
+// console.log(s);
+
+// arrow function
+// const arrowsum = (a,b) => {
+//    console.log(a+b);
+// }
+// arrowsum(2,3);
+// (a, b) => {
+//     console.log(a+b);
+// }
+
+// create a function using function keyqword that takes a string as an argument  & rturns the number of vowel in
+// the string
+
+// normal function
+function countvowels(str){
+    let count =0;
+    let vowels = "aeiouAEIOU"
+
+    for(let char of str){
+        if(vowels.includes(char)){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countvowels("JavaScript"));
+
+
+// arrow functin
+const countvowel = (str) => {
+     let count =0;
+    let vowels = "aeiouAEIOU"
+
+    for(let char of str){
+        if(vowels.includes(char)){
+            count++;
+        }
+    }
+    return count;
+};
+console.log(countvowels("Programming"));
